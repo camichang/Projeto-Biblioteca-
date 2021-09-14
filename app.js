@@ -14,7 +14,7 @@ app.listen(port, () => {
     console.log("servidor na porta " + port)
 });
 
-mongoose.connect("mongodb+srv://camila_chang:camila_chang@cluster0.gcljv.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://usuario:senha@cluster0.gcljv.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const Livros = mongoose.model("livros", {
     nome: String,
